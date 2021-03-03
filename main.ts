@@ -4,8 +4,16 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onGesture(Gesture.LogoUp, function () {
     basic.showString("you have" + Rewards + "rewards well well do")
-    if (Rewards >= 25) {
-    	
+    if (Rewards == 100) {
+        basic.showString("Well done you are at your platinum")
+    } else if (Rewards == 75) {
+        basic.showString("Well done you are at your gold")
+    } else if (Rewards == 50) {
+        basic.showString("Well done you are at your silver")
+    } else if (Rewards == 25) {
+        basic.showString("Well do you are at your bronze")
+    } else {
+        basic.showString("Keep going nearly at your next milestone ")
     }
 })
 input.onButtonPressed(Button.AB, function () {
